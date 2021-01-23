@@ -11,12 +11,12 @@
 
 <h2>Все пользователи</h2><br />
 
-<c:forEach var="user" items="${requestScope.users}">
+<c:forEach var="userNameAge" items="${requestScope.users}">
     <ul>
 
-        <li>Имя: <c:out value="${user.name}"/></li>
+        <li>Имя: <c:out value="${userNameAge.name}"/></li>
 
-        <li>Возраст: <c:out value="${user.age}"/></li>
+        <li>Возраст: <c:out value="${userNameAge.age}"/></li>
     </ul>
     <hr />
 
