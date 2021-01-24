@@ -13,7 +13,9 @@ public class User {
 	private String password;
 	private ROLE role;
 
+public User() {
 
+}
 		public User(int id, String login, String password, ROLE role) {
 		this.id = id;
 		this.login = login;
@@ -94,6 +96,6 @@ public class User {
 	}
 
 	public enum ROLE {
-		USER, ADMIN, UNKNOWN;
+		USER, ADMIN, UNKNOWN
 	}
 }

@@ -14,10 +14,8 @@ import java.util.*;
 public class UserDAO {
 	private final List<User> store = new ArrayList<>();
 
-//	User result = new User();
-
 	public User getById(int id) {
-		User result = new User(1, "Pavel", "ADMIN");
+		User result = new User();
 		result.setId(-1);
 
 		for (User user : store) {
@@ -30,7 +28,7 @@ public class UserDAO {
 
 	public User getUserByLoginPassword(final String login,
 									   final String password) {
-		User result = new User(1, "Pavel", "ADMIN");
+		User result = new User();
 		result.setId(-1);
 
 		for(User user : store) {

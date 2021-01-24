@@ -14,8 +14,9 @@
         <url-pattern>/</url-pattern>
     </filter-mapping>
 
-<servlet>
-    <servlet-name>LogoutServlet</servlet-name>
+<!--<servlet servlet-class="ru.javavision.servlets.servlet.LogoutServlet">-->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
     <servlet-class>ru.javavision.servlets.servlet.LogoutServlet</servlet-class>
 </servlet>
     <servlet-mapping>
